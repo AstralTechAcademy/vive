@@ -89,7 +89,8 @@ aside {
     border-color: rgba($theme-dark, .5);
     @include sans-serif-font;
     @include transition-all;
-    .navbar-header .navbar-brand {
+    .navbar-header .navbar-brand{
+        height: 60px;
         color: $theme-primary;
         @include sans-serif-font;
         font-weight: 700;
@@ -124,7 +125,7 @@ aside {
         }
     }
     @media (min-width: 768px) {
-        background-color: transparent;
+        background-color: white;
         border-color: rgba(white, .3);
         .navbar-header .navbar-brand {
             color: rgba(white, .7);
@@ -135,9 +136,9 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: darken($theme-dark, 10%);
             &:hover {
-                color: white;
+                color: darken($theme-primary, 10%);
             }
         }
         &.affix {
